@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  div#container(ng-controller="SocketController")
+    ul#messages
+      li(ng-repeat="item in messages")
+          {{item}}
